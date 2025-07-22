@@ -1,0 +1,54 @@
+.hero-section {
+    min-height: 100vh;
+    background: linear-gradient(to bottom right, rgba(168, 230, 207, 0.95), rgba(86, 171, 47, 0.95)),
+                url('src/assets/images/green-tech.jpg') no-repeat center center / cover;
+    background-size: cover;
+    background-position: center;
+    padding: 80px 0;
+    position: relative;
+    color: #fff;
+    text-align: left;
+    overflow: hidden;
+  }
+  
+  /* Filtre assombri ou effet légèrement flouté sur le fond, si besoin */
+  .hero-section::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.15); /* optionnel : un léger assombrissement */
+    z-index: 0;
+  }
+  
+  .hero-section .container {
+    position: relative;
+    z-index: 1;
+  }
+  
+  .hero-section h1 {
+    color: #14532d; /* Vert foncé pour contraste */
+    text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.5);
+  }
+  
+  .hero-section p {
+    color: rgba(255, 255, 255, 0.85);
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+    font-size: 1.2rem;
+    margin-top: 1rem;
+  }
+  
+  .hero-section .btn {
+    margin-top: 1.5rem;
+    padding: 12px 24px;
+    font-size: 1.1rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+  }
+  
+  .hero-section .btn:hover {
+    background-color: #198754;
+    color: white;
+    transform: scale(1.05);
+  }
+  
